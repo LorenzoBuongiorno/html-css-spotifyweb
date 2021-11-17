@@ -7,23 +7,48 @@
     <title>html-css-spotifyweb</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="first-box">
             <nav>
-                <div class="logo">
-                    <img src="img/logo.svg" alt="">
+                <div class="first-section">
+                    <div class="logo">
+                        <img class="logo-normal" src="img/logo.svg" alt="">
+                        <img class="logo-minimize" src="img/favicon.ico" alt="">
+                    </div>
+                    <div class="navigation">
+                        <div class="navigation-button home"><img src="img/home.svg" alt=""><span> Home</span></div>
+                        <div class="navigation-button search"><img src="img/search.svg" alt=""><span> Cerca</span></div>
+                        <div class="navigation-button libreria"><img src="img/libreria.svg" alt=""><span> La tua libreria</span></div>
+                    </div>
+                    <div class="playlist">
+                        <h3>PLAYLIST</h3>
+                        <div class="new-playlist"><div class="aggiungi">+</div>Crea Playlist</div>
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="navigation">
-                    <div class="navigation-button"><img src="img/home.svg" alt=""> Home</div>
-                    <div class="navigation-button"><img src="img/search.svg" alt=""> Cerca</div>
-                    <div class="navigation-button"><img src="img/libreria.svg" alt=""> La tua libreria</div>
-                </div>
-                <div class="playlist">
-                    <h3>PLAYLIST</h3>
-                    <div class="new-playlist"><div class="aggiungi">+</div><span> Crea Playlist</span></div>
-
+                <div class="second-section">
+                    <div class="user">
+                        <div class="download">
+                            <img src="img/download.svg" alt="">
+                            <span> Installa app </span>
+                        </div>
+                        <div class="account">
+                            <img src="img/profile.svg" alt="">
+                            <span> John Doe </span>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <main>
@@ -32,9 +57,46 @@
         </div>
         <div class="second-box">
             <footer>
-                <div class="footer-box-left"></div>
-                <div class="footer-box-center"></div>
-                <div class="footer-box-right"></div>
+
+                <div class="footer-box-left">
+                    <div class="logo-and-artist">
+                        <div class="logo-song"><img src="img/sinister.jpeg" alt=""></div>
+                        <div class="artist-title">
+                            <div class="artist">Sinister</div>
+                            <div class="title">Brano Nome</div>
+                        </div>
+                    </div>
+                    <div class="like-and-folder">
+                        <div class="like"><i class="far fa-heart"></i></div>
+                        <div class="add-folder"><i class="far fa-folder"></i></div>
+                    </div>
+                </div>
+
+                <div class="footer-box-center">
+                    <div class="controllo-comandi">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-undo-alt"></i>
+
+                    </div>
+                    <div class="barra-stato">
+                        <div class="actual-timing">00:30</div>
+                        <div class="barra">
+                            <div class="stato"></div>
+                        </div>
+                        <div class="timing">2:29</div>
+
+                    </div>
+                </div>
+
+                <div class="footer-box-right">
+                    <i class="fas fa-list-ul"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <div class="volume"><div></div></div>
+                </div>
             </footer>
         </div>
 
