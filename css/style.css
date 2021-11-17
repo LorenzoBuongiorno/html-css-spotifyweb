@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+}
+
+.first-box{
+    display: flex;
+    justify-content: flex-start;
+    height: calc(100% - 100px);
+}
+
+nav{
+    height: 100%;
+    width: 260px;
+    background-color: green;
+    padding: 10px;
+}
+
+.logo{
+    width: 60%;
+    background-color: purple;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.navigation{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 80%;
+    background-color: purple;
+}
+
+.navigation img{
+    width: 30px;
+}
+
+.navigation div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.playlist{
+    width: 80%;
+    height: 400px;
+    background-color: purple;
+}
+
+.playlist h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.aggiungi{
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    font-size: 27px;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    width: calc(100% - 300px);
+    background-color: blue;
+}
+
+.upgrade{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    opacity: 40%;
+}
+
+
+.second-box{
+    height: 100px;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-start center space-between;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+.footer-box-left{
+    width: 400px;
+    height: 100%;
+    background-color: yellow;
+}
+
+.footer-box-center{
+    width: 400px;
+    flex-grow: 1;
+    height: 100%;
+    margin: 0px 20px;
+    background-color: yellow;
+}
+
+.footer-box-right{
+    width: 400px;
+    height: 100%;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 575px) {
+    
+    nav{
+        height: 100%;
+        width: 50px;
+        background-color: green;
+    }
+
+    main{
+        width: calc(100% - 50px);
+        background-color: blue;
+    }
+
+
+}
