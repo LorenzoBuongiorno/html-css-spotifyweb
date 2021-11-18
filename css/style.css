@@ -27,7 +27,7 @@
 .first-box{
     display: flex;
     justify-content: flex-start;
-    height: calc(100% - 80px);
+    height: calc(100vh - 80px);
 }
 
 nav{
@@ -37,6 +37,15 @@ nav{
     height: 100%;
     width: 260px;
     background-color: #000;
+}
+
+.first-section{
+    height: calc(100% - 120px);
+    min-height: 400px;
+}
+
+.second-section{
+    min-height: 120px;
 }
 
 .logo .logo-normal{
@@ -121,6 +130,20 @@ ul{
     margin-top: 10px;
 }
 
+.static{
+    max-height: 340px;
+}
+
+.scroll{
+    height: calc(100% - 340px);
+}
+
+
+.scrollbar{
+    height: 100%;
+    overflow-y: auto;
+}
+
 .download{
     border-bottom: 2px solid #ccc;
     display: flex;
@@ -153,25 +176,97 @@ ul{
 
 main{
     width: calc(100% - 260px);
-    background-color: blue;
+    background-color: #141922;
+    padding-top: 100px;
+    overflow-y: scroll;
 }
 
 .upgrade{
+    position: fixed;
+    top: 0;
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: #000;
     opacity: 40%;
 }
 
-
-.second-box{
-    height: 80px;
+.category{
+    width: 100%;
+    height: 50px;
+    background-color: pink;
 }
+
+.flex-songs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.album{
+    padding: 5px;
+    width: 20%;
+    min-width: 100px;
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.songs{
+    padding-left: 20px;
+}
+
+.songs img{
+    width: 100%;
+}
+
+.songs h2{
+    font-size: 30px;
+    color: #eee;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.songs .description{
+    font-size: 15px;
+    color: #777;
+}
+
+.songs .title{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+}
+.songs .subtitle{
+    font-size: 15px;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* FOOTER */
+
+.second-box{
+    height: 80px;
+}
 
 footer{
     display: flex;
@@ -179,15 +274,18 @@ footer{
     height: 100%;
     width: 100%;
     background-color: #222;
+    z-index: 1;
 }
 
 .footer-box-left{
     display: flex;
     justify-content: space-between;
     width: 250px;
+    max-width: calc(100% / 3);
     height: 100%;
     padding: 20px;
     background-color: #222;
+    z-index: 122;
 }
 
 .logo-and-artist,.like-and-folder{
@@ -221,10 +319,12 @@ footer{
 
 
 .footer-box-center{
-
+    width: calc(100% - 450px);
+    min-width: 200px;
     flex-grow: 1;
     height: 100%;
     padding: 10px;
+    background-color: #222;
 }
 
 .controllo-comandi{
@@ -237,13 +337,13 @@ footer{
 }
 
 .controllo-comandi .fas{
-    margin: 0px 20px;
+    margin: 0px 12px;
     font-size: 18px;
 }
 
 .fa-play-circle{
     font-size: 25px;
-    margin: 0px 15px;
+    margin: 0px 10px;
 }
 
 .barra-stato{
@@ -255,10 +355,11 @@ footer{
 }
 
 .barra{
-    width: 70%;
+    width: 100%;
     height: 5px;
     background-color: #666;
-    margin: 0px 20px;
+    margin: 0px 15px;
+    min-width: 100px;
 }
 
 .stato{
@@ -282,8 +383,9 @@ footer{
 .footer-box-right{
     display: flex;
     align-items: center;
-    justify-content: flex-end space-between;
+    justify-content: flex-end;
     width: 200px;
+    max-width: calc(100% / 3);
     height: 100%;
 }
 
@@ -309,33 +411,46 @@ footer{
 
 
 
+@media screen and (max-width: 1300px) {
 
-
-
-
-
-
-
-
-@media screen and (max-width: 700px) {
-    
-    .footer-box-left{
-        width: 130px;
-        padding-left: 5px;
+    .flex-songs{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-grow: 1;
     }
 
-    .footer-box-center{
-        width: 250px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    
+    .footer-box-left{
+        padding: 20px 5px;
+    }
+
+    /* .footer-box-center{
+        width: 190px;
     }
 
     .footer-box-right{
-        width: 140px;
-    }
+        width: 130px;
+    } */
 
     .like-and-folder{
         display: flex;
         flex-direction: column;
         font-size: 10px;
+    }
+
+    .flex-songs{
+        flex-wrap: wrap;
+    }
+
+    .album{
+        width: 50%;
+        margin: 0 auto;
     }
 
 
@@ -360,10 +475,9 @@ footer{
 
     main{
         width: calc(100% - 50px);
-        background-color: blue;
     }
 
-    .logo .logo-normal,.navigation span,.second-section,.playlist{
+    .logo .logo-normal,.navigation span,.second-section,.playlist,.scrollbar{
         display: none;
     }
 
@@ -384,6 +498,11 @@ footer{
 
     .logo{
         padding: 10px;
+    }
+
+    .album{
+        width: 50%;
+        margin: 0 auto;
     }
 
 }
