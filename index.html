@@ -23,25 +23,26 @@
                             <img class="logo-minimize" src="img/favicon.ico" alt="">
                         </div>
                         <div class="navigation">
-                            <div class="navigation-button home"><img src="img/home.svg" alt=""><span> Home</span></div>
-                            <div class="navigation-button search"><img src="img/search.svg" alt=""><span> Cerca</span></div>
-                            <div class="navigation-button libreria"><img src="img/libreria.svg" alt=""><span> La tua libreria</span></div>
+                            <div class="navigation-button home"><img src="img/home.svg" alt=""><span><a href="#"> Home</a></span></div>
+                            <div class="navigation-button search"><img src="img/search.svg" alt=""><span><a href="#"> Cerca</a></span></div>
+                            <div class="navigation-button libreria"><img src="img/libreria.svg" alt=""><span><a href="#"> La tua libreria</a></span></div>
                         </div>
                         <div class="playlist">
                             <h3>PLAYLIST</h3>
-                            <div class="new-playlist"><div class="aggiungi">+</div>Crea Playlist</div>
+                            <div class="new-playlist"><a href="#"><div class="aggiungi">+</div><a href="#"> Crea Playlist</a></a></div>
                         </div>
                     </div>
 
                     <div class="scroll">
                         <div class="scrollbar">
                             <ul>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -51,7 +52,7 @@
                     <div class="user">
                         <div class="download">
                             <img src="img/download.svg" alt="">
-                            <span> Installa app </span>
+                            <span><a href="#"> Installa app </a></span>
                         </div>
                         <div class="account">
                             <img src="img/profile.svg" alt="">
@@ -61,8 +62,23 @@
                 </div>
             </nav>
             <main>
-                <div class="upgrade"></div>
-                <div class="category"></div>
+                <div class="upgrade">
+                    <div class="upgrade-button">
+                        <div class="button"><a href="#">EFFETTUA L'UPGRADE</a></div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY -->
+                <div class="category">
+                    <div class="category-box">
+                        <div class="button1"><a href="#">IN EVIDENZA</a></div>
+                        <div class="button"><a href="#">PODCAST</a></div>
+                        <div class="button"><a href="#">CLASSIFICHE</a></div>
+                        <div class="button"><a href="#">GENERI E MOOD</a></div>
+                        <div class="button"><a href="#">NUOVE USCITE</a></div>
+                        <div class="button"><a href="#">SCOPRI</a></div>
+                    </div>
+                </div>
                 <div class="songs">
 
                     <!-- FIRST ROW -->
@@ -71,6 +87,7 @@
                         <div class="flex-songs">
                             <div class="album">
                                 <div class="photo">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
                                     <img src="img/metal_lifting.jpg" alt="">
                                 </div>
                                 <div class="title">Heavy Metal</div>
@@ -79,41 +96,46 @@
 
                             <div class="album">
                                 <div class="photo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/stranger.jpeg" alt="">
                                 </div>
-                                <div class="title">Heavy Metal</div>
+                                <div class="title">Stranger Things Vol. 1 (a Netflix Original Series Soundtrack)</div>
+                                <div class="subtitle">Kyle Dixon & Michael Stain</div>
+                            </div>
+
+                            <div class="album">
+                                <div class="photo">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                </div>
+                                <div class="title">A quiet place</div>
                                 <div class="subtitle">Subtitle</div>
                             </div>
 
                             <div class="album">
                                 <div class="photo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/split.jpeg" alt="">
                                 </div>
-                                <div class="title">Heavy Metal</div>
+                                <div class="title">Split</div>
                                 <div class="subtitle">Subtitle</div>
                             </div>
 
                             <div class="album">
                                 <div class="photo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/cure.jpeg" alt="">
                                 </div>
-                                <div class="title">Heavy Metal</div>
+                                <div class="title">A cure for wellness</div>
                                 <div class="subtitle">Subtitle</div>
                             </div>
 
                             <div class="album">
                                 <div class="photo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/sinister.jpeg" alt="">
                                 </div>
-                                <div class="title">Heavy Metal</div>
-                                <div class="subtitle">Subtitle</div>
-                            </div>
-
-                            <div class="album">
-                                <div class="photo">
-                                    <img src="img/metal_lifting.jpg" alt="">
-                                </div>
-                                <div class="title">Heavy Metal</div>
+                                <div class="title">Sinister</div>
                                 <div class="subtitle">Subtitle</div>
                             </div>
                         </div>
@@ -128,10 +150,20 @@
                         <div class="flex-songs">
                             <div class="album">
                                 <div class="photo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/radar.jpeg" alt="">
                                 </div>
-                                <div class="title">Heavy Metal</div>
-                                <div class="subtitle">Subtitle</div>
+                                <div class="title">Relase Radar</div>
+                                <div class="subtitle"></div>
+                            </div>
+
+                            <div class="album">
+                                <div class="photo">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/mixdaily.jpeg" alt="">
+                                </div>
+                                <div class="title">Daily Mix 1</div>
+                                <div class="subtitle"></div>
                             </div>
                         </div>
                     </div>
@@ -143,11 +175,21 @@
                         <div class="description">Più ascolti, più accurati saranno i suggerimenti</div>
                         <div class="flex-songs">
                             <div class="album">
-                                <div class="photo">
-                                    <img src="img/metal_lifting.jpg" alt="">
+                                <div class="photo rounded">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/youg.jpeg" alt="">
                                 </div>
-                                <div class="title">Heavy Metal</div>
-                                <div class="subtitle">Subtitle</div>
+                                <div class="title">Lana del Rey</div>
+                                <div class="subtitle"></div>
+                            </div>
+
+                            <div class="album">
+                                <div class="photo rounded">
+                                    <div class="play"><i class="far fa-play-circle"></i></div>
+                                    <img src="img/einaudi.jpeg" alt="">
+                                </div>
+                                <div class="title">Ludovico Einaudi</div>
+                                <div class="subtitle"></div>
                             </div>
                         </div>
                     </div>
@@ -163,22 +205,22 @@
                         <div class="logo-song"><img src="img/sinister.jpeg" alt=""></div>
                         <div class="artist-title">
                             <div class="artist">Sinister</div>
-                            <div class="title">Brano Nome</div>
+                            <div class="title"><a href="#"> Brano Nome</a></div>
                         </div>
                     </div>
                     <div class="like-and-folder">
-                        <div class="like"><i class="far fa-heart"></i></div>
-                        <div class="add-folder"><i class="far fa-folder"></i></div>
+                        <div class="like"><a href="#"><i class="far fa-heart"></i></a></div>
+                        <div class="add-folder"><a href="#"><i class="far fa-folder"></i></a></div>
                     </div>
                 </div>
 
                 <div class="footer-box-center">
                     <div class="controllo-comandi">
-                        <i class="fas fa-random"></i>
-                        <i class="fas fa-step-backward"></i>
-                        <i class="far fa-play-circle"></i>
-                        <i class="fas fa-step-forward"></i>
-                        <i class="fas fa-undo-alt"></i>
+                        <a href="#"><i class="fas fa-random"></i></a>
+                        <a href="#"><i class="fas fa-step-backward"></i></a>
+                        <a href="#"><i class="far fa-play-circle"></i></a>
+                        <a href="#"><i class="fas fa-step-forward"></i></a>
+                        <a href="#"><i class="fas fa-undo-alt"></i></a>
 
                     </div>
                     <div class="barra-stato">
@@ -192,10 +234,10 @@
                 </div>
 
                 <div class="footer-box-right">
-                    <i class="fas fa-list-ul"></i>
-                    <i class="fas fa-desktop"></i>
-                    <i class="fas fa-volume-up"></i>
-                    <div class="volume"><div></div></div>
+                   <a href="#"><i class="fas fa-list-ul"></i></a>
+                   <a href="#"><i class="fas fa-desktop"></i></a>
+                    <a href="#"><i class="fas fa-volume-up"></i></a>
+                    <div class="volume"><div class="stato-volume"></div></div>
                 </div>
             </footer>
         </div>

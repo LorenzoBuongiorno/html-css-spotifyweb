@@ -6,21 +6,25 @@
     color: #ccc;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+
+a:hover i{
+    color: #fff;
+}
+
 /* NAV BAR */
 
 .container{
     height: 100vh;
 }
 
-.logo{
-    padding: 20px;
-}
-
-.user{
-    padding: 20px;
-}
-
-.playlist{
+.logo,.user,.playlist{
     padding: 20px;
 }
 
@@ -37,6 +41,7 @@ nav{
     height: 100%;
     width: 260px;
     background-color: #000;
+    overflow: hidden;
 }
 
 .first-section{
@@ -123,11 +128,20 @@ nav{
     color: #000;
 }
 
+.new-playlist:hover .aggiungi{
+    background-color: #fff;
+}
+
+.new-playlist:hover a{
+    color: #fff;
+}
+
 ul{
     flex-shrink: 1;
     list-style: none;
     line-height: 35px;
     margin-top: 10px;
+    margin-left: 20px;
 }
 
 .static{
@@ -181,20 +195,116 @@ main{
     overflow-y: scroll;
 }
 
+
+/* UPGRADE */
+
 .upgrade{
     position: fixed;
     top: 0;
     height: 100px;
     width: 100%;
-    background-color: #000;
-    opacity: 40%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
+
+.upgrade .button a{
+    color: #fff;
+    padding: 15px;
+    font-size: 17px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+}
+
+.upgrade-button{
+    width: calc(100% - 260px);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.upgrade .button:hover a{
+    color: #fff;
+    padding: 19px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* CATEGORY */
 
 .category{
     width: 100%;
-    height: 50px;
-    background-color: pink;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
+
+.category-box{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.category-box a{
+    color: #777;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.category-box div{
+    margin: 10px 5px;
+}
+
+.category-box .button1 a::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 5px solid #00ff00;
+}
+
+.category-box .button:hover a::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 5px solid #00ff00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CANZONI */
 
 .flex-songs{
     display: flex;
@@ -208,6 +318,48 @@ main{
     max-width: 200px;
     margin: 10px;
     text-align: center;
+}
+
+.your-songs .flex-songs{
+    justify-content: flex-start;
+}
+
+.popular .flex-songs{
+    justify-content: flex-start;
+}
+
+.photo{
+    position: relative;
+}
+
+.rounded img,.rounded .play{
+    border-radius: 50%;
+}
+
+.play{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.album:hover .play{
+    position: absolute;
+    display: block;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play i{
+    font-size: 60px;
+}
+
+.play i:hover{
+    font-size: 60px;
+    color: #fff;
 }
 
 .songs{
@@ -226,6 +378,7 @@ main{
 }
 
 .songs .description{
+    margin-bottom: 10px;
     font-size: 15px;
     color: #777;
 }
@@ -244,24 +397,6 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 
 .second-box{
@@ -276,6 +411,9 @@ footer{
     background-color: #222;
     z-index: 1;
 }
+
+
+/* LEFT */
 
 .footer-box-left{
     display: flex;
@@ -304,7 +442,9 @@ footer{
     font-size: 13px;
 }
 
-.title{
+.artist-title .title{
+    margin-top: 5px;
+    color: #777;
     font-size: 10px;
 }
 
@@ -315,8 +455,7 @@ footer{
 
 
 
-
-
+/* CENTER */
 
 .footer-box-center{
     width: calc(100% - 450px);
@@ -328,7 +467,6 @@ footer{
 }
 
 .controllo-comandi{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,6 +481,11 @@ footer{
 
 .fa-play-circle{
     font-size: 25px;
+    margin: 0px 10px;
+}
+
+.fa-play-circle:hover{
+    font-size: 28px;
     margin: 0px 10px;
 }
 
@@ -366,6 +509,7 @@ footer{
     height: 100%;
     width: 30%;
     background-color: #fff;
+    position: relative;
 }
 
 .actual-timing,.timing{
@@ -373,12 +517,27 @@ footer{
     font-size: 13px;
 }
 
+.barra:hover .stato{
+    background-color: #00ff00;
+    cursor: pointer;
+}
+
+.barra:hover .stato::before{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+}
 
 
 
 
-
-
+/* RIGHT */
 
 .footer-box-right{
     display: flex;
@@ -400,15 +559,37 @@ footer{
     margin-right: 10px;
 }
 
-.volume div{
+.stato-volume{
     width: 30%;
     height: 100%;
     background-color: #fff;
+    position: relative;
+}
+
+.volume:hover .stato-volume{
+    background-color: #00ff00;
+    cursor: pointer;
+}
+
+.volume:hover .stato-volume::before{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
 }
 
 
 
 
+
+
+
+/* ------------------------------ */
 
 
 @media screen and (max-width: 1300px) {
@@ -474,6 +655,10 @@ footer{
     }
 
     main{
+        width: calc(100% - 50px);
+    }
+
+    .upgrade-button{
         width: calc(100% - 50px);
     }
 
