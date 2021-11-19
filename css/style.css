@@ -18,6 +18,17 @@ a:hover i{
     color: #fff;
 }
 
+.first-box{
+    display: flex;
+    justify-content: flex-start;
+    height: calc(100vh - 80px);
+}
+
+.second-box{
+    height: 80px;
+}
+
+
 /* NAV BAR */
 
 .container{
@@ -28,16 +39,7 @@ a:hover i{
     padding: 20px;
 }
 
-.first-box{
-    display: flex;
-    justify-content: flex-start;
-    height: calc(100vh - 80px);
-}
-
 nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 100%;
     width: 260px;
     background-color: #000;
@@ -184,8 +186,6 @@ ul{
 }
 
 
-
-
 /* MAIN */
 
 main{
@@ -226,19 +226,11 @@ main{
 
 .upgrade .button:hover a{
     color: #fff;
-    padding: 19px;
-    font-size: 20px;
+    padding: 18px;
+    font-size: 19px;
     border: 2px solid #fff;
     border-radius: 40px;
 }
-
-
-
-
-
-
-
-
 
 
 /* CATEGORY */
@@ -291,16 +283,6 @@ main{
     left: 25%;
     border-bottom: 5px solid #00ff00;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -399,17 +381,12 @@ main{
 
 /* FOOTER */
 
-.second-box{
-    height: 80px;
-}
-
 footer{
     display: flex;
     justify-content: flex-start center space-between;
     height: 100%;
     width: 100%;
     background-color: #222;
-    z-index: 1;
 }
 
 
@@ -423,7 +400,6 @@ footer{
     height: 100%;
     padding: 20px;
     background-color: #222;
-    z-index: 122;
 }
 
 .logo-and-artist,.like-and-folder{
@@ -535,8 +511,6 @@ footer{
 }
 
 
-
-
 /* RIGHT */
 
 .footer-box-right{
@@ -584,11 +558,6 @@ footer{
 }
 
 
-
-
-
-
-
 /* ------------------------------ */
 
 
@@ -601,8 +570,6 @@ footer{
     }
 
 }
-
-
 
 
 @media screen and (max-width: 800px) {
@@ -644,8 +611,6 @@ footer{
 
 
 
-
-
 @media screen and (max-width: 575px) {
     
     nav{
@@ -666,11 +631,11 @@ footer{
         display: none;
     }
 
-    .navigation-button img{
+    .navigation div img{
         margin: 0px;
     }
   
-    .navigation-button{
+    .navigation div{
         border: 0;
         justify-content: center;
     }
